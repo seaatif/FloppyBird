@@ -1,0 +1,21 @@
+{
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.library": [
+        "${3rd}/love2d/library",
+        "includes\\hump",
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.diagnostics.globals": [
+        "push",
+        "smallFont",
+        "largeFont",
+        "scoreFont",
+        "normalFont",
+        "sleep",
+        "__includes",
+        "gamePause",
+        "baseController",
+        "gameOver",
+        "exitConfirm"
+    ],
+}
