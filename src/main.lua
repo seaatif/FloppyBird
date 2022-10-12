@@ -100,6 +100,7 @@ function love.keypressed(key)
         love.event.quit()
     elseif key == "return" and not gameOver then
         gamePause = not gamePause
+        Signal.emit("game_pause", gamePause)
     elseif key == 'return' and gameOver then
         love:resetGame()
     elseif key == "escape" then

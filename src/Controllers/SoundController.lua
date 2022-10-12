@@ -27,8 +27,17 @@ function SoundController:registerEvents()
         -- local sound = love.audio.newSource("sounds/jump.mp3", "static")
         -- sound:play()
     end)
+
+    Signal.register("game_pause", function (isPause)
+        if isPause then
+            self.backLoop:pause()
+        else
+            self.backLoop:play()
+        end
+    end)
 end
 
 function SoundController:reset()
+    self.backLoop:stop()
     self.backLoop:play()
 end
