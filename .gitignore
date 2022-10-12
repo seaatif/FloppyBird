@@ -1,10 +1,2 @@
-export/config.ini
-export/FloppyBird.exe
-export/love.dll
-export/lua51.dll
-export/mpg123.dll
-export/msvcp120.dll
-export/msvcr120.dll
-export/OpenAL32.dll
-export/SDL2.dll
+export/*
 FloppyBird.zip
